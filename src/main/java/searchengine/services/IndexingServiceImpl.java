@@ -25,16 +25,10 @@ import java.util.logging.Logger;
 @RequiredArgsConstructor
 public class IndexingServiceImpl implements IndexingService {
     private final Logger logger = Logger.getLogger(IndexingServiceImpl.class.getName());
-
-    @Autowired
     private final SiteRepository siteRepository;
-    @Autowired
     private final PageRepository pageRepository;
-    @Autowired
     private final LemmaRepository lemmaRepository;
-    @Autowired
     private final IndexRepository indexRepository;
-
     private final SitesList sites;
     private ForkJoinPool pool;
 
